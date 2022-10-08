@@ -8,5 +8,29 @@
 </head>
 <body>
   <h1>こんにちは！</h1>
+  <from name="contact" method="POST" netlify>
+    <p>
+      <label>Your Name: <input type="text" name="name"></label>
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email"></label>
+    </p>
+    <p>
+      <label>Your Role: <select type="role[]" name="role" multiple>
+        <option value="leader">Leader</option>
+        <option value="follower">Follower</option>
+        </select></label>
+    </p>
+    <p>
+      <label>like food: <select type="food[]" name="food" multiple>
+        <option value="hamburger">hamburger</option>
+        <option value="Sushi">Sushi</option>
+        <option value="Yakiniku">Yakiniku</option>
+        </select></label>
+    </p>
+    <p>
+      <label>Message: : <textarea type="message" name="message"></textarea></label>
+    </p>
+  </from>
 </body>
 </html>
